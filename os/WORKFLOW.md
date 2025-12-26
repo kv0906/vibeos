@@ -132,6 +132,47 @@ projects/{name}/
 
 ---
 
+## NOTES.md Template
+
+```markdown
+# Notes — {Project Name}
+
+## Handoff Log
+
+| Date | Session Summary | Decisions Made | Next Actions |
+|------|-----------------|----------------|--------------|
+| 2024-01-15 | Setup project, created PROBLEM.md, researched competitors | Stack: Astro + Tailwind | Build hero section |
+| 2024-01-16 | Built hero + work grid, deployed to Vercel | Dark mode default | Write case study 1 |
+| ... | ... | ... | ... |
+
+## Open Questions
+- [Question that needs resolving]
+
+## Decisions Archive
+- **[Date]** Decided X because Y
+- **[Date]** Changed from A to B after learning C
+```
+
+---
+
+## Session Handoff Rule
+
+**At the end of every working session, always:**
+
+1. Summarize what was done
+2. Record decisions made
+3. Note what's next
+4. Add row to NOTES.md handoff table
+
+Prompt the user: *"Want me to add a handoff summary to NOTES.md before we wrap?"*
+
+This ensures:
+- Context is never lost between sessions
+- Anyone (including future you) can resume instantly
+- Decisions are traceable
+
+---
+
 ## Quick Reference
 
 **Start a project:**
@@ -143,9 +184,16 @@ projects/{name}/
 
 **Resume a project:**
 ```
-1. Read PROBLEM.md
-2. Check NOTES.md
-3. Continue
+1. Read PROBLEM.md (the vision)
+2. Read NOTES.md handoff table (where we left off)
+3. Continue from last "Next Actions"
+```
+
+**End a session:**
+```
+1. Summarize progress
+2. Add handoff row to NOTES.md
+3. Clear next actions
 ```
 
 ---

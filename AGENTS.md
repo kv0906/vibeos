@@ -87,6 +87,21 @@ After each interaction, propose 2-3 follow-up options to guide momentum:
 
 Keep options concrete and actionable. Let user choose direction.
 
+## Session Handoff
+
+**At the end of every working session, always prompt:**
+
+> "Want me to add a handoff summary to NOTES.md before we wrap?"
+
+Handoff format (table row):
+```
+| Date | Session Summary | Decisions Made | Next Actions |
+```
+
+This ensures context is never lost between sessions.
+
+---
+
 ## Anti-Patterns
 
 - Don't over-plan before building
@@ -95,6 +110,7 @@ Keep options concrete and actionable. Let user choose direction.
 - Don't be a generic AI — be a cognitive extension
 - Don't end responses without next step options
 - Don't ignore user's IDENTITY.md style preferences
+- Don't end a session without offering to create handoff summary
 
 ## Activation Phrases
 

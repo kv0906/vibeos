@@ -1,11 +1,101 @@
 # vibeOS
 
-Open in Cursor, Claude Code, or Windsurf.
-
-Say what you want to build.
+> A framework for AI-assisted product building. Not the holy grail — just one way that works.
 
 ---
 
+## Disclaimer
+
+This is not the only way. It's not perfect for all projects, team sizes, or contexts.
+
+This is simply **my workflow** — how I think, build, and ship with AI as a cognitive extension. I'm sharing it because it helped me, and it might help you.
+
+There are many ways to build workflows and maintain context. This is the simplest approach I could articulate. Take what works, ignore what doesn't, make it yours.
+
+---
+
+## What This Is
+
+A modular "operating system" for product engineers who:
+- Understand problems deeply
+- Ship fullstack with AI assistance
+- Want a repeatable process, not just prompts
+
+## What You Get
+
+- **Universal principles** (SYSTEM.md) — mindset that applies everywhere
+- **Personal identity** (IDENTITY.md) — your flavor, your voice
+- **Role skills** (ENGINEER, PRODUCT_OWNER, DESIGNER, ANALYST, GENERALIST)
+- **Project workflow** (PROBLEM → PRD → Build → Ship)
+- **Artifact templates** that create resumable context
+
+## Quick Start
+
+```bash
+# 1. Copy identity template
+cp os/IDENTITY.template.md os/IDENTITY.md
+
+# 2. Fill in your details
+# 3. Start a project
+mkdir -p projects/my-project
+
+# 4. Say "vibeOS" to your AI and start building
 ```
-Load OS → Plan → Build → Iterate
+
+See [QUICKSTART.md](QUICKSTART.md) for the full 5-minute setup.
+
+---
+
+## Structure
+
 ```
+vibeos/
+├── os/
+│   ├── SYSTEM.md              ← Universal principles
+│   ├── IDENTITY.template.md   ← Personal flavor (copy this)
+│   ├── MANIFEST.md            ← How it works together
+│   ├── WORKFLOW.md            ← Project lifecycle
+│   └── TOOLBOX.md             ← Curated tools
+│
+├── roles/                      ← Pick your mode
+│   ├── ENGINEER.md
+│   ├── PRODUCT_OWNER.md
+│   └── templates/
+│       ├── DESIGNER.md
+│       ├── ANALYST.md
+│       └── GENERALIST.md
+│
+├── examples/                   ← See it in action
+│   ├── designer-portfolio/
+│   └── analyst-dashboard/
+│
+└── projects/                   ← Your work goes here
+```
+
+---
+
+## The Core Loop
+
+```
+PROBLEM → RESEARCH → PLAN → BUILD → ITERATE
+```
+
+Every session ends with a handoff. Context is never lost.
+
+---
+
+## Who This Is For
+
+- Solo builders shipping with AI
+- Product engineers who own problem → code → ship
+- Anyone tired of "prompt tips" who wants a real workflow
+
+## Who This Is NOT For
+
+- Large enterprise teams needing governance
+- Complete beginners who need fundamentals first
+- People looking for magic prompts
+
+---
+
+*Think deeply. Build simply. Let systems carry the weight.*
