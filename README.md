@@ -14,6 +14,67 @@ There are many ways to build workflows and maintain context. This is the simples
 
 ---
 
+## Prerequisites
+
+Before using vibeOS, you need an AI coding environment:
+
+| Tool | Setup |
+|------|-------|
+| **Cursor** | [cursor.com](https://cursor.com) → Download → Open folder with `cursor .` |
+| **Windsurf** | [codeium.com/windsurf](https://codeium.com/windsurf) → Download → Open folder |
+| **Claude Code** | `npm install -g @anthropic-ai/claude-code` → Run `claude` in terminal |
+| **VS Code + Copilot** | Works, but less integrated — paste prompts manually |
+
+### Quick Setup
+
+```bash
+# Clone vibeOS
+git clone https://github.com/kv0906/vibeos.git
+cd vibeos
+
+# Open with your AI editor
+cursor .        # or
+windsurf .      # or
+claude          # for Claude Code
+```
+
+The AI will automatically read `AGENTS.md` (or `CLAUDE.md`) and understand how to operate.
+
+---
+
+## Before / After
+
+**Without vibeOS:**
+```
+You: Build me a sales dashboard
+
+AI: Here's a React dashboard with charts...
+    [500 lines of generic code]
+    
+You: Wait, that's not what I meant...
+```
+
+**With vibeOS:**
+```
+You: vibeOS — I want to build a sales dashboard
+
+AI: Let's start with the problem.
+    - What pain are you solving? (manual reporting? slow insights?)
+    - Who needs this dashboard?
+    - What decisions will it drive?
+
+You: I spend 4 hours every Monday making reports manually...
+
+AI: Got it. Let me create your PROBLEM.md:
+    [Creates focused problem definition]
+    
+    Before we build, let's plan the phases...
+```
+
+The difference: **context-aware building** instead of generic code generation.
+
+---
+
 ## What This Is
 
 A modular "operating system" for product engineers who:

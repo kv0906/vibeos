@@ -71,15 +71,21 @@ Create a `PROBLEM.md`:
 
 ## Step 4: Activate vibeOS (30 sec)
 
-In your AI conversation, say:
+In your AI conversation, type this **exactly**:
 
-> "vibeOS — I want to build [your project]. Here's the problem: [paste PROBLEM.md]"
+```
+vibeOS — I want to build [your idea in 5 words or less]
+```
+
+**Examples:**
+- "vibeOS — I want to build a habit tracker app"
+- "vibeOS — I want to build my portfolio website"
+- "vibeOS — I want to automate my weekly reports"
 
 The AI will now:
-1. Load SYSTEM.md (universal principles)
-2. Load your IDENTITY.md (your flavor)
-3. Detect the appropriate role
-4. Help you plan and build
+1. Ask about the problem you're solving
+2. Help you create PROBLEM.md
+3. Plan and build with you
 
 ---
 

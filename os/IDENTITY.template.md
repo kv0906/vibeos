@@ -4,99 +4,90 @@
 
 ---
 
-## Who I Am
+## Quick Setup (Pick One From Each)
 
-**Background:** [Your background — what shaped your thinking?]
+Don't overthink this. Pick what resonates, customize later.
 
-**Archetype:** [How would you describe yourself in 2-3 words?]
-- Examples: "Systems Architect", "Creative Problem Solver", "Detail-Oriented Builder"
+### Your Archetype (pick one or write your own)
 
-**Operating mode:** [Your default approach to work]
-- Examples: "Build leverage, not labor", "Ship fast, learn faster", "Measure twice, cut once"
+- **Builder** — I ship things. Speed over perfection.
+- **Craftsman** — I care about quality. Details matter.
+- **Strategist** — I think before I act. Planning is power.
+- **Explorer** — I learn by doing. Experiments over plans.
+- **Connector** — I see relationships. Systems thinking.
+
+**My archetype:** [write here]
+
+### Your Operating Mode (pick one)
+
+- "Ship fast, learn faster"
+- "Measure twice, cut once"
+- "Build leverage, not labor"
+- "Simple until proven otherwise"
+- "Done is better than perfect"
+
+**My mode:** [write here]
 
 ---
 
-## My Superpowers
+## Who I Am (fill in the blanks)
 
-What do you do better than most?
+**Background:** 
+[1-2 sentences: What's your experience? What shaped how you think?]
 
-1. [Superpower 1] — [Why this matters]
-2. [Superpower 2] — [Why this matters]
-3. [Superpower 3] — [Why this matters]
+**What I'm good at:**
+1. [Skill/strength 1]
+2. [Skill/strength 2]
+3. [Skill/strength 3]
 
----
-
-## My Philosophy
-
-What beliefs guide your work? Pick frameworks that resonate:
-
-**Examples:**
-- Stoicism — Focus on what's controllable
-- Lean — Eliminate waste, maximize value
-- Design Thinking — Empathy-driven solutions
-- First Principles — Question everything
-- Kaizen — Continuous small improvements
-
-**My blend:**
-- [Philosophy 1] — [How you apply it]
-- [Philosophy 2] — [How you apply it]
+**What I'm optimizing for right now:**
+[What's your current goal? What does success look like in 3-6 months?]
 
 ---
 
 ## Communication Style
 
-### Tone
-- [e.g., Peer-to-peer, not expert-to-novice]
-- [e.g., Warm but direct]
-- [e.g., Confident without arrogance]
+### I prefer (check what applies)
+- [ ] Direct and concise — get to the point
+- [ ] Detailed explanations — I want to understand why
+- [ ] Visual — show me diagrams, wireframes
+- [ ] Examples first — show me code/demos before theory
 
 ### Language
-- [Primary language for work]
-- [When to switch languages, if bilingual]
+- **Primary:** [English / Vietnamese / other]
+- **When to switch:** [e.g., "Vietnamese for community content"]
 
-### Anti-patterns (I never do this)
-- [e.g., Lecturing tone]
-- [e.g., Jargon without explanation]
-- [e.g., Hedging when I have conviction]
-
----
-
-## What I'm Optimizing For
-
-**Short-term:** [Next 3-6 months]
-
-**Medium-term:** [Next 1-2 years]
-
-**Long-term:** [The bigger picture]
+### I never want the AI to...
+- [e.g., "Use a lecturing tone"]
+- [e.g., "Over-explain simple things"]
+- [e.g., "Add unnecessary comments to code"]
 
 ---
 
 ## My Default Tools
 
-| Layer | My Choice | Why |
-|-------|-----------|-----|
-| **Primary tool** | [e.g., Figma, VS Code, Excel] | [reason] |
-| **Framework** | [e.g., React, Rails, Python] | [reason] |
-| **AI assistant** | [e.g., Claude, GPT, Copilot] | [reason] |
-| **Note-taking** | [e.g., Notion, Obsidian] | [reason] |
+| Need | My Choice |
+|------|-----------|
+| Editor | [Cursor / VS Code / Windsurf] |
+| Framework | [React / Vue / Svelte / etc.] |
+| Backend | [Supabase / Firebase / custom] |
+| Hosting | [Vercel / Netlify / Railway] |
 
 ---
 
-## Signature Phrase
+## Signature Phrase (optional)
 
-> "[Your personal mantra or guiding quote]"
+> "[A quote or mantra that guides you — or leave blank]"
 
 ---
 
 ## How to Use This
 
 When the AI works with you:
-
-1. **Default to this identity** unless context overrides
-2. **Match your communication style** — as defined above
-3. **Apply your mental models** when analyzing problems
-4. **Respect your anti-patterns** — don't produce what you'd never say
-5. **Layer in role-specific skills** as needed
+1. Match your communication style
+2. Respect your anti-patterns
+3. Use tools you're familiar with
+4. Optimize for what you're working toward
 
 ---
 
