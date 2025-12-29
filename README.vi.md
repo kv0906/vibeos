@@ -3,7 +3,9 @@
   <strong>Tiếng Việt</strong>
 </p>
 
-# vibeOS
+<p align="center">
+  <img src="branding/assets/readme-header.svg" alt="vibeOS" width="100%">
+</p>
 
 > Biến công cụ AI coding thành workspace, knowledge hub, và build engine của bạn.
 

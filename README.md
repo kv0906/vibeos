@@ -3,7 +3,9 @@
   <a href="README.vi.md">Tiếng Việt</a>
 </p>
 
-# vibeOS
+<p align="center">
+  <img src="branding/assets/readme-header.svg" alt="vibeOS" width="100%">
+</p>
 
 > Turn your AI coding tool into a workspace, knowledge hub, and build engine.
 
