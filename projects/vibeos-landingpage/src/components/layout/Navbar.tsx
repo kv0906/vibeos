@@ -50,32 +50,38 @@ export function Navbar() {
               </span>
             </a>
 
-            {/* Desktop Nav */}
-            <div className="hidden md:flex items-center gap-8">
-              {navLinks.map((link) => (
+            {/* Desktop Nav - mono links with border separators */}
+            <div className="hidden md:flex items-center">
+              {navLinks.map((link, index) => (
                 <a
                   key={link.label}
                   href={link.href}
-                  className="font-mono text-small text-text-secondary hover:text-accent-violet transition-colors"
+                  className={`
+                    font-mono text-small text-text-secondary hover:text-accent-violet transition-colors
+                    px-4 py-2
+                    ${index < navLinks.length - 1 ? 'border-r border-vibe-border' : ''}
+                  `}
                 >
                   {link.label}
                 </a>
               ))}
-              <Button 
-                variant="outline" 
-                href="https://github.com/kv0906/vibeos"
-              >
-                GITHUB
-              </Button>
+              <div className="ml-6">
+                <Button 
+                  variant="outline" 
+                  href="https://github.com/kv0906/vibeos"
+                >
+                  GITHUB
+                </Button>
+              </div>
             </div>
 
             {/* Mobile Menu Button */}
             <button
-              className="md:hidden p-2 text-text-secondary hover:text-text-primary transition-colors"
+              className="md:hidden p-2 border border-vibe-border text-text-secondary hover:text-text-primary hover:border-text-primary transition-colors"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle menu"
             >
-              {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
           </div>
         </div>
@@ -95,7 +101,7 @@ export function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
             />
             <motion.div
-              className="absolute top-20 left-0 right-0 p-6 space-y-4 border-b border-vibe-border bg-vibe-black"
+              className="absolute top-20 left-0 right-0 p-6 space-y-0 border-b border-vibe-border bg-vibe-black"
               initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -20, opacity: 0 }}
@@ -104,7 +110,7 @@ export function Navbar() {
                 <a
                   key={link.label}
                   href={link.href}
-                  className="block font-mono text-lg text-text-primary py-3 border-b border-vibe-border hover:text-accent-violet transition-colors"
+                  className="block font-mono text-lg text-text-primary py-4 border-b border-vibe-border hover:text-accent-violet transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.label}
@@ -113,7 +119,7 @@ export function Navbar() {
               <Button 
                 variant="outline" 
                 href="https://github.com/kv0906/vibeos"
-                className="w-full mt-4"
+                className="w-full mt-6"
               >
                 GITHUB
               </Button>

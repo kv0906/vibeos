@@ -8,11 +8,11 @@ interface SectionHeaderProps {
 export function SectionHeader({ label, title, subtitle, className = '' }: SectionHeaderProps) {
   return (
     <div className={`text-center mb-16 ${className}`}>
-      <span className="inline-block text-tiny font-mono uppercase tracking-wider text-accent-violet mb-4">
+      <span className="inline-block text-tiny font-mono uppercase tracking-wider text-accent-violet mb-4 border border-accent-violet px-2 py-0.5">
         {label}
       </span>
       <h2 
-        className="text-2xl md:text-3xl lg:text-[2.5rem] font-semibold text-text-primary leading-tight text-balance"
+        className="text-2xl md:text-3xl lg:text-[2.5rem] font-semibold text-text-primary leading-tight text-balance font-serif"
         dangerouslySetInnerHTML={{ __html: title }}
       />
       {subtitle && (

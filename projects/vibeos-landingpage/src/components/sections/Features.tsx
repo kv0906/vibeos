@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { SectionHeader } from '../ui/SectionHeader'
-import { Card } from '../ui/Card'
+import { WindowCard } from '../ui/WindowCard'
 import { staggerContainer, staggerItem } from '../../lib/animations'
 
 const features = [
@@ -47,19 +47,17 @@ export function Features() {
         >
           {features.map((feature) => (
             <motion.div key={feature.number} variants={staggerItem}>
-              <Card 
-                className="h-full bg-vibe-elevated hover:border-accent-violet transition-colors duration-300"
+              <WindowCard 
+                title={`feature://${feature.number}`}
+                className="h-full"
               >
-                <span className="font-mono text-small font-semibold text-accent-violet mb-4 block">
-                  {feature.number}
-                </span>
-                <h3 className="text-xl font-semibold text-text-primary mb-3">
+                <h3 className="text-xl font-semibold text-text-primary mb-3 font-serif">
                   {feature.title}
                 </h3>
                 <p className="text-text-secondary leading-relaxed">
                   {feature.description}
                 </p>
-              </Card>
+              </WindowCard>
             </motion.div>
           ))}
         </motion.div>

@@ -2,29 +2,30 @@ import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { SectionHeader } from '../ui/SectionHeader'
 import { Card } from '../ui/Card'
+import { Badge } from '../ui/Badge'
 import { staggerContainer, staggerItem } from '../../lib/animations'
 
 const roles = [
   {
-    icon: '🛠️',
+    tag: 'ENG',
     title: 'Engineer',
     description: 'Build, code, architect, debug, implement',
     color: '#10B981',
   },
   {
-    icon: '📋',
+    tag: 'PRD',
     title: 'Product Owner',
     description: 'PRD, features, requirements, user stories',
     color: '#3B82F6',
   },
   {
-    icon: '🎨',
+    tag: 'DSN',
     title: 'Designer',
     description: 'UI, UX, mockups, wireframes, prototypes',
     color: '#EC4899',
   },
   {
-    icon: '📊',
+    tag: 'ANL',
     title: 'Analyst',
     description: 'Data, research, metrics, analysis',
     color: '#F59E0B',
@@ -55,11 +56,14 @@ export function Roles() {
                 className="h-full text-center bg-vibe-elevated group"
                 borderColor={role.color}
               >
-                <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                  {role.icon}
-                </div>
+                <Badge 
+                  className="mb-4"
+                  style={{ borderColor: role.color, color: role.color } as React.CSSProperties}
+                >
+                  [{role.tag}]
+                </Badge>
                 <h3 
-                  className="text-lg font-semibold mb-2 transition-colors duration-300"
+                  className="text-lg font-semibold mb-2 transition-colors duration-300 font-serif"
                   style={{ color: role.color }}
                 >
                   {role.title}

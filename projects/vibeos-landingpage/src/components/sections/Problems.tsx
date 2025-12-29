@@ -2,26 +2,27 @@ import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { SectionHeader } from '../ui/SectionHeader'
 import { Card } from '../ui/Card'
+import { Badge } from '../ui/Badge'
 import { staggerContainer, staggerItem } from '../../lib/animations'
 
 const problems = [
   {
-    icon: '📁',
+    tag: 'SYS',
     title: 'Scattered Workspace',
     description: 'Files everywhere, no structure, context lost every session.',
   },
   {
-    icon: '🧠',
+    tag: 'CTX',
     title: 'Fragmented Context',
     description: 'AI forgets everything between sessions. You repeat yourself constantly.',
   },
   {
-    icon: '🎯',
+    tag: 'THK',
     title: 'No System Thinking',
     description: 'Jumping to solutions without understanding the real problem.',
   },
   {
-    icon: '🚀',
+    tag: 'SHP',
     title: "Can't Ship Fast",
     description: 'Stuck in loops, never finishing, prompts that go nowhere.',
   },
@@ -48,10 +49,10 @@ export function Problems() {
           {problems.map((problem) => (
             <motion.div key={problem.title} variants={staggerItem}>
               <Card className="h-full group">
-                <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                  {problem.icon}
-                </div>
-                <h3 className="text-lg font-semibold text-text-primary mb-2">
+                <Badge variant="muted" className="mb-4">
+                  [{problem.tag}]
+                </Badge>
+                <h3 className="text-lg font-semibold text-text-primary mb-2 font-serif">
                   {problem.title}
                 </h3>
                 <p className="text-small text-text-secondary">

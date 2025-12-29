@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { Button } from '../ui/Button'
 import { Terminal } from '../ui/Terminal'
-import { GlowEffect } from '../shared/GlowEffect'
+import { GradientDots } from '../ui/GradientDots'
 import { staggerContainer, staggerItem } from '../../lib/animations'
 
 const terminalLines = [
@@ -15,13 +15,7 @@ const terminalLines = [
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
-      {/* Background glow */}
-      <GlowEffect 
-        className="top-[20%] right-[5%] lg:right-[10%]" 
-        size="lg" 
-        animate 
-      />
-
+      <GradientDots duration={20} className="-z-10" backgroundColor="hsl(var(--background))" />
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-32">
         <motion.div
           className="max-w-4xl"
@@ -29,14 +23,14 @@ export function Hero() {
           initial="hidden"
           animate="visible"
         >
-          {/* Title */}
+          {/* Title - Serif heading */}
           <motion.h1 
-            className="text-4xl md:text-5xl lg:text-display-lg font-bold tracking-tight"
+            className="text-4xl md:text-5xl lg:text-display-lg font-bold tracking-tight font-serif"
             variants={staggerItem}
           >
             Turn your AI coding tool into a
             <br />
-            <span className="gradient-text">workspace, knowledge hub,</span>
+            <span className="text-accent-violet">workspace, knowledge hub,</span>
             <br />
             and build engine.
           </motion.h1>
@@ -50,7 +44,7 @@ export function Hero() {
             extension of YOU — not a generic assistant.
           </motion.p>
 
-          {/* CTA Buttons */}
+          {/* CTA Buttons - Outlined style */}
           <motion.div 
             className="mt-10 flex flex-wrap gap-4"
             variants={staggerItem}
@@ -71,12 +65,12 @@ export function Hero() {
             </Button>
           </motion.div>
 
-          {/* Terminal */}
+          {/* Terminal with window chrome */}
           <motion.div 
             className="mt-16 max-w-2xl"
             variants={staggerItem}
           >
-            <Terminal lines={terminalLines} />
+            <Terminal lines={terminalLines} showLive />
           </motion.div>
         </motion.div>
       </div>

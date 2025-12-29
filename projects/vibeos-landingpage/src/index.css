@@ -8,11 +8,15 @@
   }
   
   body {
-    @apply bg-vibe-black text-text-primary font-sans antialiased;
+    @apply bg-vibe-black text-text-primary font-mono antialiased;
   }
   
   ::selection {
     @apply bg-accent-violet/30;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif;
   }
 }
 
@@ -21,12 +25,90 @@
     @apply bg-gradient-to-br from-accent-indigo to-accent-violet bg-clip-text text-transparent;
   }
   
-  .glass-effect {
-    @apply bg-vibe-black/80 backdrop-blur-xl;
-  }
-  
   .section-padding {
     @apply py-24 lg:py-32;
+  }
+
+  /* Brutalist Card - sharp corners, border-only, no shadows */
+  .brut-card {
+    @apply bg-vibe-elevated border border-vibe-border p-6 transition-colors duration-200;
+  }
+
+  .brut-card--hover:hover {
+    @apply border-accent-violet;
+  }
+
+  /* Window Chrome - terminal-style header */
+  .window-chrome {
+    @apply bg-vibe-dark border border-vibe-border overflow-hidden;
+  }
+
+  .window-chrome__header {
+    @apply flex items-center gap-3 px-4 py-3 bg-vibe-elevated border-b border-vibe-border;
+  }
+
+  .window-chrome__dots {
+    @apply flex gap-1.5;
+  }
+
+  .window-chrome__dot {
+    @apply w-3 h-3 rounded-full;
+  }
+
+  .window-chrome__dot--red {
+    @apply bg-red-500/80;
+  }
+
+  .window-chrome__dot--yellow {
+    @apply bg-yellow-500/80;
+  }
+
+  .window-chrome__dot--green {
+    @apply bg-green-500/80;
+  }
+
+  .window-chrome__title {
+    @apply text-tiny text-text-muted font-mono uppercase tracking-wider;
+  }
+
+  .window-chrome__body {
+    @apply p-6;
+  }
+
+  /* LIVE Badge - square bordered label */
+  .live-badge {
+    @apply inline-flex items-center gap-1.5 px-2 py-0.5 border text-tiny font-mono uppercase tracking-wider;
+  }
+
+  .live-badge--active {
+    @apply border-role-engineer text-role-engineer;
+  }
+
+  .live-badge__dot {
+    @apply w-1.5 h-1.5 rounded-full bg-current animate-pulse;
+  }
+
+  /* Outlined Button - brutalist style */
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border border-accent-violet text-accent-violet font-mono uppercase tracking-wider transition-all duration-200;
+  }
+
+  .btn-outline:hover {
+    @apply bg-accent-violet text-vibe-black;
+  }
+
+  /* Ghost Button - brutalist style */
+  .btn-ghost-brut {
+    @apply inline-flex items-center gap-2 border border-vibe-border text-text-secondary font-mono uppercase tracking-wider transition-all duration-200;
+  }
+
+  .btn-ghost-brut:hover {
+    @apply border-text-primary text-text-primary;
+  }
+
+  /* Mono Tag - replaces emojis */
+  .mono-tag {
+    @apply inline-block px-2 py-0.5 border border-vibe-border text-tiny font-mono uppercase text-text-muted;
   }
 }
 

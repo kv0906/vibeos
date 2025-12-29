@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { SectionHeader } from '../ui/SectionHeader'
+import { Badge } from '../ui/Badge'
 
 const steps = [
   { 
@@ -8,28 +9,25 @@ const steps = [
     label: 'PROBLEM', 
     description: 'Understand the why', 
     color: '#EF4444',
-    active: false 
   },
   { 
     number: 2, 
     label: 'PRD', 
     description: 'Define the what', 
     color: '#3B82F6',
-    active: false 
   },
   { 
     number: 3, 
     label: 'TECH_SPEC', 
     description: 'Plan the how', 
     color: '#10B981',
-    active: false 
   },
   { 
     number: 4, 
     label: 'SHIP', 
     description: 'Execute & iterate', 
     color: '#8B5CF6',
-    active: true 
+    active: true,
   },
 ]
 
@@ -46,64 +44,55 @@ export function Workflow() {
 
         <motion.div
           ref={ref}
-          className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-2"
+          className="flex flex-col items-center gap-0"
           initial="hidden"
           animate={inView ? 'visible' : 'hidden'}
         >
           {steps.map((step, index) => (
             <motion.div
               key={step.label}
-              className="flex items-center"
+              className="flex items-center gap-6 w-full max-w-md"
               initial={{ opacity: 0, x: -20 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: index * 0.15, duration: 0.4 }}
             >
-              {/* Step */}
-              <div className="flex flex-col items-center text-center w-28 md:w-32">
-                {/* Icon */}
+              {/* Vertical line connector */}
+              <div className="flex flex-col items-center">
+                {/* Step number box */}
                 <div 
                   className={`
-                    relative w-14 h-14 rounded-xl flex items-center justify-center mb-3
+                    w-12 h-12 border-2 flex items-center justify-center
                     font-mono font-bold text-lg transition-all duration-300
-                    ${step.active 
-                      ? 'bg-gradient-to-br from-accent-indigo to-accent-violet text-white shadow-lg shadow-accent-violet/30' 
-                      : 'bg-vibe-elevated border-2'
-                    }
+                    ${step.active ? 'bg-accent-violet border-accent-violet text-vibe-black' : 'bg-transparent'}
                   `}
                   style={{ 
-                    borderColor: step.active ? 'transparent' : step.color,
-                    color: step.active ? 'white' : step.color
+                    borderColor: step.color,
+                    color: step.active ? undefined : step.color
                   }}
                 >
-                  {step.active && (
-                    <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-accent-indigo to-accent-violet opacity-20 blur-xl" />
-                  )}
-                  <span className="relative z-10">{step.number}</span>
+                  {step.number}
                 </div>
+                {/* Connector line */}
+                {index < steps.length - 1 && (
+                  <div 
+                    className="w-px h-8 transition-all duration-300"
+                    style={{ backgroundColor: step.color }}
+                  />
+                )}
+              </div>
 
-                {/* Label */}
-                <h3 
-                  className="font-mono text-small font-semibold mb-1"
-                  style={{ color: step.color }}
+              {/* Content */}
+              <div className="py-4">
+                <Badge 
+                  className="mb-2"
+                  style={{ borderColor: step.color, color: step.color } as React.CSSProperties}
                 >
                   {step.label}
-                </h3>
-                <p className="text-tiny text-text-muted">
+                </Badge>
+                <p className="text-small text-text-muted">
                   {step.description}
                 </p>
               </div>
-
-              {/* Arrow */}
-              {index < steps.length - 1 && (
-                <motion.span 
-                  className="hidden md:block text-2xl text-text-muted mx-2"
-                  initial={{ opacity: 0, scaleX: 0 }}
-                  animate={inView ? { opacity: 0.5, scaleX: 1 } : {}}
-                  transition={{ delay: index * 0.15 + 0.2, duration: 0.3 }}
-                >
-                  →
-                </motion.span>
-              )}
             </motion.div>
           ))}
         </motion.div>
