@@ -1,0 +1,27 @@
+# Node + Editor junk
+node_modules/
+.DS_Store
+.env
+.vscode/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+
+# System
+Thumbs.db
+
+# Build and log outputs
+dist/
+build/
+*.log
+
+# Mac OS
+._*
+
+# misc
+.idea/
+*.bak
+*.tmp

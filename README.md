@@ -1,44 +1,75 @@
+<p align="right">
+  <strong>English</strong> •
+  <a href="README.vi.md">Tiếng Việt</a>
+</p>
+
 # vibeOS
 
-> A framework for AI-assisted product building. Not the holy grail — just one way that works.
+> Turn your AI coding tool into a workspace, knowledge hub, and build engine.
 
 ---
 
 ## Disclaimer
 
-This is not the only way. It's not perfect for all projects, team sizes, or contexts.
+**This is not gospel. This is not the holy grail.**
 
-This is simply **my workflow** — how I think, build, and ship with AI as a cognitive extension. I'm sharing it because it helped me, and it might help you.
+vibeOS is simply one way that works — a guideline and mindset shift, not a rigid rulebook.
 
-There are many ways to build workflows and maintain context. This is the simplest approach I could articulate. Take what works, ignore what doesn't, make it yours.
+The core beliefs in `.os/SYSTEM.md` and `.os/MANIFESTO.md` might resonate with you, or they might not. That's fine. **Take what works. Ignore what doesn't. Make it yours.**
+
+You'll figure out how to use this effectively through practice. The framework adapts to you, not the other way around.
 
 ---
 
-## Prerequisites
+## Who Uses vibeOS
 
-Before using vibeOS, you need an AI coding environment:
+| Role | How They Use It |
+|------|-----------------|
+| **Product Managers / Product Owners** | Spec features, write PRDs, align with engineering |
+| **Engineers (Junior → Senior)** | Build apps, architect systems, ship faster |
+| **UI/UX Designers** | Design systems, prototypes, handoff to dev |
+| **Marketing** | Campaign planning, content creation, research |
+| **Business Analysts / Data Analysts** | Data analysis, research, reporting |
 
-| Tool | Setup |
-|------|-------|
-| **Cursor** | [cursor.com](https://cursor.com) → Download → Open folder with `cursor .` |
-| **Windsurf** | [codeium.com/windsurf](https://codeium.com/windsurf) → Download → Open folder |
-| **Claude Code** | `npm install -g @anthropic-ai/claude-code` → Run `claude` in terminal |
-| **VS Code + Copilot** | Works, but less integrated — paste prompts manually |
+The framework detects your intent and adapts — you don't need to be technical.
 
-### Quick Setup
+---
 
-```bash
-# Clone vibeOS
-git clone https://github.com/kv0906/vibeos.git
-cd vibeos
+## The Problem
 
-# Open with your AI editor
-cursor .        # or
-windsurf .      # or
-claude          # for Claude Code
+Most people struggle with AI coding tools:
+
+- **Scattered workspace** — files everywhere, no structure
+- **Fragmented context** — AI forgets everything between sessions
+- **No system thinking** — jumping to solutions without understanding problems
+- **Prompt paralysis** — don't know how to plan and iterate with AI
+- **Can't ship fast** — stuck in loops, never finishing
+
+You have powerful AI tools. But without a system, you're just prompting into the void.
+
+---
+
+## The Solution
+
+vibeOS is a **framework** that makes AI work as an extension of YOU:
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                        vibeOS                           │
+├─────────────────────────────────────────────────────────┤
+│  Your prompt: "I want to build a habit tracker"         │
+│                         ↓                               │
+│  AI detects intent → Loads your context → Guides you    │
+│                         ↓                               │
+│  PROBLEM → PLAN → BUILD → SHIP                          │
+└─────────────────────────────────────────────────────────┘
 ```
 
-The AI will automatically read `AGENTS.md` (or `CLAUDE.md`) and understand how to operate.
+**What changes:**
+- Workspace stays organized (projects/, templates, handoffs)
+- Context persists across sessions (NOTES.md, handoff logs)
+- AI thinks like you (IDENTITY.md, your principles)
+- Clear path from idea to shipped product
 
 ---
 
@@ -46,64 +77,87 @@ The AI will automatically read `AGENTS.md` (or `CLAUDE.md`) and understand how t
 
 **Without vibeOS:**
 ```
-You: Build me a sales dashboard
+You: Build me a habit tracker
 
-AI: Here's a React dashboard with charts...
-    [500 lines of generic code]
+AI: Here's a React app with 500 lines...
+    [Generic code you didn't ask for]
     
-You: Wait, that's not what I meant...
+You: That's not what I meant...
+     [Starts over, frustrated]
 ```
 
 **With vibeOS:**
 ```
-You: vibeOS — I want to build a sales dashboard
+You: vibeOS — I want to build a habit tracker
 
 AI: Let's start with the problem.
-    - What pain are you solving? (manual reporting? slow insights?)
-    - Who needs this dashboard?
-    - What decisions will it drive?
+    - What habit-tracking pain are you solving?
+    - Is this for you or others?
+    - What does "done" look like?
 
-You: I spend 4 hours every Monday making reports manually...
+You: I keep forgetting to track. Apps are too complex.
 
-AI: Got it. Let me create your PROBLEM.md:
-    [Creates focused problem definition]
-    
-    Before we build, let's plan the phases...
+AI: Got it. Creating PROBLEM.md...
+    [Guides you step by step to shipped product]
 ```
-
-The difference: **context-aware building** instead of generic code generation.
 
 ---
 
-## What This Is
+## Works With
 
-A modular "operating system" for product engineers who:
-- Understand problems deeply
-- Ship fullstack with AI assistance
-- Want a repeatable process, not just prompts
+| Tool | Status |
+|------|--------|
+| Claude Code | ✓ Reads CLAUDE.md automatically |
+| Cursor | ✓ Reads AGENTS.md automatically |
+| Windsurf | ✓ Reads context files |
+| Cline | ✓ Reads context files |
+| Any AI that reads files | ✓ Just point to AGENTS.md |
 
-## What You Get
+---
 
-- **Universal principles** (SYSTEM.md) — mindset that applies everywhere
-- **Personal identity** (IDENTITY.md) — your flavor, your voice
-- **Role skills** (ENGINEER, PRODUCT_OWNER, DESIGNER, ANALYST, GENERALIST)
-- **Project workflow** (PROBLEM → PRD → Build → Ship)
-- **Artifact templates** that create resumable context
-
-## Quick Start
+## Quick Start (2 minutes)
 
 ```bash
-# 1. Copy identity template
-cp os/IDENTITY.template.md os/IDENTITY.md
+# Clone vibeOS
+git clone https://github.com/kv0906/vibeos.git
+cd vibeos
 
-# 2. Fill in your details
-# 3. Start a project
-mkdir -p projects/my-project
+# Open with your AI editor
+cursor .     # or windsurf . or claude
 
-# 4. Say "vibeOS" to your AI and start building
+# Start building
+# Just say: "vibeOS — I want to build [your idea]"
 ```
 
-See [QUICKSTART.md](QUICKSTART.md) for the full 5-minute setup.
+The AI will guide you from there.
+
+See [QUICKSTART.md](QUICKSTART.md) for the full setup.
+
+---
+
+## How It Works
+
+### 1. You say what you want
+```
+"I want to build a landing page"
+"I want to research competitor pricing"
+"I want to write a blog post about AI"
+```
+
+### 2. AI detects your project type
+
+| Type | What it is | Flow |
+|------|------------|------|
+| **Build** | Software, app, website | PROBLEM → PRD → TECH_SPEC → Ship |
+| **Research** | Analysis, docs, learning | PROBLEM → NOTES |
+| **Create** | Content, writing, design | PROBLEM → NOTES |
+
+### 3. AI guides you step by step
+
+- Asks the right questions
+- Creates the right files
+- Keeps context across sessions
+- Helps you ship, not just code
 
 ---
 
@@ -111,51 +165,71 @@ See [QUICKSTART.md](QUICKSTART.md) for the full 5-minute setup.
 
 ```
 vibeos/
-├── os/
-│   ├── SYSTEM.md              ← Universal principles
-│   ├── IDENTITY.template.md   ← Personal flavor (copy this)
-│   ├── MANIFEST.md            ← How it works together
-│   ├── WORKFLOW.md            ← Project lifecycle
-│   └── TOOLBOX.md             ← Curated tools
+├── .os/                        ← The operating system
+│   ├── SYSTEM.md               ← Core beliefs & principles
+│   ├── MANIFESTO.md            ← How AI operates
+│   ├── WORKFLOW.md             ← Project lifecycle
+│   ├── IDENTITY.template.md    ← Your personal flavor (copy this)
+│   └── TOOLBOX.md              ← Curated tools
 │
-├── roles/                      ← Pick your mode
-│   ├── ENGINEER.md
-│   ├── PRODUCT_OWNER.md
-│   └── templates/
-│       ├── DESIGNER.md
-│       ├── ANALYST.md
-│       └── GENERALIST.md
+├── roles/                      ← Skill modes
+│   ├── ENGINEER.md             ← Build software
+│   ├── PRODUCT_OWNER.md        ← Define products
+│   └── templates/              ← More roles
 │
-├── examples/                   ← See it in action
-│   ├── designer-portfolio/
-│   └── analyst-dashboard/
+├── examples/                   ← Real project journeys
+│   ├── build-habit-tracker/    ← Full Build example
+│   └── research-user-behavior/ ← Research example
 │
 └── projects/                   ← Your work goes here
 ```
 
 ---
 
-## The Core Loop
-
-```
-PROBLEM → RESEARCH → PLAN → BUILD → ITERATE
-```
-
-Every session ends with a handoff. Context is never lost.
-
----
-
 ## Who This Is For
 
-- Solo builders shipping with AI
-- Product engineers who own problem → code → ship
-- Anyone tired of "prompt tips" who wants a real workflow
+- **Solo builders** shipping with AI
+- **Product engineers** who own problem → code → ship
+- **Anyone tired of scattered prompts** who wants a real system
 
 ## Who This Is NOT For
 
 - Large enterprise teams needing governance
 - Complete beginners who need fundamentals first
 - People looking for magic prompts
+
+---
+
+## Core Principles
+
+From [SYSTEM.md](.os/SYSTEM.md):
+
+1. **Problem-first** — Understand before you build
+2. **Simplicity** — Compress complexity, ship clean
+3. **Systems over goals** — Build repeatable processes
+4. **Ship and iterate** — 80% shipped beats 100% planned
+
+---
+
+## Examples
+
+See real project journeys in [examples/](examples/):
+
+- **[build-habit-tracker](examples/build-habit-tracker/)** — Full Build project: idea → shipped app
+- **[research-user-behavior](examples/research-user-behavior/)** — Research project: question → insights
+
+---
+
+## Customize It
+
+vibeOS is meant to be forked and customized:
+
+- **`.os/SYSTEM.md`** — Edit the principles to match your beliefs
+- **`.os/IDENTITY.md`** — Add your personal voice and style
+- **`.os/MANIFESTO.md`** — Adjust how the AI operates
+- **`roles/`** — Create custom roles for your workflow
+
+The best version of vibeOS is the one you make your own.
 
 ---
 

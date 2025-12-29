@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" fill="none">
+  <!-- vibeOS Wordmark Only - Light Background Variant -->
+  <defs>
+    <linearGradient id="accentGradientLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Light variant -->
+  <text x="5" y="30" font-family="Inter, -apple-system, sans-serif" font-size="28" font-weight="600" fill="#111827">
+    vibe<tspan fill="url(#accentGradientLight)">OS</tspan>
+  </text>
+</svg>

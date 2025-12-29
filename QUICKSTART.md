@@ -4,25 +4,58 @@
 
 ---
 
+## What is vibeOS?
+
+vibeOS is a **framework** that makes any AI coding assistant work as an extension of YOU — not a generic helper.
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                        vibeOS                           │
+├─────────────────────────────────────────────────────────┤
+│  SYSTEM.md      → What we believe (principles)          │
+│  IDENTITY.md    → Who YOU are (your flavor)             │
+│  MANIFESTO.md   → How AI operates (routing)             │
+│  WORKFLOW.md    → How projects flow (lifecycle)         │
+├─────────────────────────────────────────────────────────┤
+│  roles/         → Skill modes (Engineer, Analyst, etc.) │
+│  projects/      → Your actual work                      │
+└─────────────────────────────────────────────────────────┘
+```
+
+**Works with:** Claude Code, Cursor, Windsurf, Cline, or any AI that reads context files.
+
+---
+
+## How it Works
+
+```
+You prompt → AI detects intent → Loads right mode → Responds as YOU would
+```
+
+The AI will:
+1. Detect what you're doing (Build / Research / Create)
+2. Load the right role (Engineer / Analyst / etc.)
+3. Follow your workflow (not generic AI patterns)
+4. Match your voice and style
+
+---
+
 ## Step 1: Copy your identity template (1 min)
 
 ```bash
-cp os/IDENTITY.template.md os/IDENTITY.md
+cp .os/IDENTITY.template.md .os/IDENTITY.md
 ```
 
-Open `IDENTITY.md` and fill in the basics:
+Open `IDENTITY.md` and fill in:
 - Your background
 - Your archetype (2-3 words describing you)
 - Your communication style
-- Your tools
 
-**Don't overthink it.** You can refine later.
+**Don't overthink it.** Refine later.
 
 ---
 
 ## Step 2: Choose your primary role (30 sec)
-
-Pick the role that matches your main work:
 
 | You are... | Use this role |
 |------------|---------------|
@@ -32,76 +65,57 @@ Pick the role that matches your main work:
 | Data/business analysis | `roles/templates/ANALYST.md` |
 | A bit of everything | `roles/templates/GENERALIST.md` |
 
-You can use multiple roles — the AI will detect from context.
+The AI detects from context — you can switch anytime.
 
 ---
 
-## Step 3: Start a project (2 min)
+## Step 3: Understand Project Types
 
-Create your first project folder:
+Not all work needs the same structure:
 
-```bash
-mkdir -p projects/my-first-project
-```
+| Type | What it is | Files You Need |
+|------|------------|----------------|
+| **Build** | Web app, software, vibe coding | PROBLEM → PRD → TECH_SPEC |
+| **Research** | Analysis, docs, PDFs, data | PROBLEM → NOTES only |
+| **Create** | Content, writing, design | PROBLEM → NOTES only |
 
-Create a `PROBLEM.md`:
-
-```markdown
-# My First Project
-
-## Problem
-**What's the problem?**
-[One sentence. Clear.]
-
-**Who feels it?**
-[Specific person]
-
-**How do they cope today?**
-[Current workaround]
-
-## Intention
-**Mode:** Solve / Explore / Learn
-**Success looks like:** [What "done" means]
-
----
-*Status: Active*
-```
+**Key insight:** Don't create TECH_SPEC.md for research projects. Only Build projects need it.
 
 ---
 
 ## Step 4: Activate vibeOS (30 sec)
 
-In your AI conversation, type this **exactly**:
+Type this in your AI conversation:
 
 ```
-vibeOS — I want to build [your idea in 5 words or less]
+vibeOS — I want to [your goal]
 ```
 
 **Examples:**
-- "vibeOS — I want to build a habit tracker app"
-- "vibeOS — I want to build my portfolio website"
-- "vibeOS — I want to automate my weekly reports"
+- "vibeOS — I want to build a habit tracker app" → **Build** flow
+- "vibeOS — I want to research user onboarding patterns" → **Research** flow
+- "vibeOS — I want to write a blog post about AI" → **Create** flow
 
-The AI will now:
-1. Ask about the problem you're solving
-2. Help you create PROBLEM.md
-3. Plan and build with you
+The AI will detect your project type and guide you accordingly.
 
 ---
 
-## Step 5: Build
+## Step 5: Start Working
 
-Follow the workflow:
-
+**For Build projects:**
 ```
-PROBLEM → RESEARCH → PLAN → BUILD → ITERATE
+1. Create projects/{name}/PROBLEM.md
+2. Build PRD.md (what/why)
+3. Build TECH_SPEC.md (how)
+4. Code and iterate
 ```
 
-Use these files as you go:
-- `PROBLEM.md` — Your north star
-- `PRD.md` — What you're building (if needed)
-- `TECH_SPEC.md` — How you're building (if needed)
-- `NOTES.md` — Decisions and progress
+**For Research/Create projects:**
+```
+1. Create projects/{name}/PROBLEM.md
+2. Work and capture in NOTES.md
+3. That's it — no over-engineering
+```
 
 ---
 
@@ -110,36 +124,9 @@ Use these files as you go:
 | Say this | AI does this |
 |----------|--------------|
 | "vibeOS" | Reload operating system |
-| "Run as me" | Same as vibeOS |
 | "Engineer mode" | Switch to ENGINEER.md |
 | "Product mode" | Switch to PRODUCT_OWNER.md |
-| "What's my workflow?" | Show WORKFLOW.md steps |
-
----
-
-## Example First Session
-
-```
-You: vibeOS — I want to build a habit tracker app.
-
-AI: [Loads your OS] 
-    Let's start with the problem.
-    - What habit-tracking pain are you solving?
-    - Who is this for — you or others?
-    - How do you/they track habits today?
-
-You: It's for me. I forget to track my daily habits. 
-     I use notes app but never open it.
-
-AI: Got it. Let me create your PROBLEM.md...
-    [Creates problem definition]
-    
-    Before we build, let's research:
-    - What makes existing habit apps work/fail?
-    - What's the minimum version that solves YOUR problem?
-    
-    Want me to research, or do you have a solution in mind?
-```
+| "Analyst mode" | Switch to ANALYST.md |
 
 ---
 
@@ -147,10 +134,10 @@ AI: Got it. Let me create your PROBLEM.md...
 
 ```
 vibeos/
-├── os/
-│   ├── SYSTEM.md            ← Universal principles (read this)
+├── .os/
+│   ├── SYSTEM.md            ← Core beliefs
 │   ├── IDENTITY.md          ← Your personal flavor (create this)
-│   ├── MANIFEST.md          ← How it all works together
+│   ├── MANIFESTO.md         ← How AI operates
 │   ├── WORKFLOW.md          ← Project lifecycle
 │   └── TOOLBOX.md           ← Curated tools
 │
@@ -166,10 +153,9 @@ vibeos/
 
 ## Next Steps
 
-1. **Customize IDENTITY.md** — Make it actually you
+1. **Create IDENTITY.md** — Make it actually you
 2. **Read SYSTEM.md** — Understand the principles
-3. **Start building** — Learn by doing
-4. **Refine as you go** — The OS evolves with you
+3. **Start a project** — Learn by doing
 
 ---
 

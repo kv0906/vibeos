@@ -12,6 +12,20 @@ PROMPT → CLARIFY → UNDERSTAND → CREATE → BUILD → ITERATE
 
 ---
 
+## Project Types
+
+Not all projects are the same. Detect the type first:
+
+| Type | What it is | Files Needed |
+|------|------------|--------------|
+| **Build** | Software, web app, vibe coding | PROBLEM → PRD → TECH_SPEC → NOTES |
+| **Research** | Analysis, docs, PDFs, user behavior | PROBLEM → NOTES |
+| **Create** | Content, writing, design assets | PROBLEM → NOTES |
+
+**Rule:** Only **Build** projects need TECH_SPEC.md. Don't over-engineer.
+
+---
+
 ## Project Initiation
 
 ### The Opening Question
@@ -34,21 +48,31 @@ Follow-ups if needed:
 
 ## Project Structure
 
-Start minimal, grow as needed:
+### Build Projects (Software/Apps)
 
 ```
 projects/{name}/
 ├── PROBLEM.md     ← Vision anchor (always)
-├── PRD.md         ← Product: what/why/how, user stories
-├── TECH_SPEC.md   ← Engineer: stack, architecture (when needed)
+├── PRD.md         ← What/why/how, user stories
+├── TECH_SPEC.md   ← Stack, architecture
 └── NOTES.md       ← Decisions, progress
 ```
 
-| Complexity | Files Needed |
-|------------|--------------|
-| Simple | PROBLEM.md → PRD.md |
-| Medium | PROBLEM.md → PRD.md → TECH_SPEC.md |
-| Complex | All + features/ subfolder |
+### Research Projects (Analysis/Docs)
+
+```
+projects/{name}/
+├── PROBLEM.md     ← What are we researching?
+└── NOTES.md       ← Findings, insights, decisions
+```
+
+### Create Projects (Content/Design)
+
+```
+projects/{name}/
+├── PROBLEM.md     ← What are we creating?
+└── NOTES.md       ← Drafts, iterations, decisions
+```
 
 ---
 
@@ -68,6 +92,7 @@ projects/{name}/
 [Current workaround]
 
 ## Intention
+**Type:** Build / Research / Create
 **Mode:** Solve / Explore / Learn
 **Success looks like:** [What "done" means]
 
@@ -77,7 +102,7 @@ projects/{name}/
 
 ---
 
-## PRD.md Template
+## PRD.md Template (Build Projects Only)
 
 ```markdown
 # {Feature/Project Name}
@@ -107,7 +132,7 @@ projects/{name}/
 
 ---
 
-## TECH_SPEC.md Template (When Needed)
+## TECH_SPEC.md Template (Build Projects Only)
 
 ```markdown
 # {Feature/Project Name} — Tech Spec
@@ -132,7 +157,7 @@ projects/{name}/
 
 ---
 
-## NOTES.md Template
+## NOTES.md Template (All Projects)
 
 ```markdown
 # Notes — {Project Name}
@@ -141,16 +166,19 @@ projects/{name}/
 
 | Date | Session Summary | Decisions Made | Next Actions |
 |------|-----------------|----------------|--------------|
-| 2024-01-15 | Setup project, created PROBLEM.md, researched competitors | Stack: Astro + Tailwind | Build hero section |
-| 2024-01-16 | Built hero + work grid, deployed to Vercel | Dark mode default | Write case study 1 |
+| 2024-01-15 09:00 | Started research, reviewed 3 papers | Focus on user behavior | Summarize findings |
+| 2024-01-15 14:30 | Completed analysis, wrote summary | Use framework X | Draft recommendations |
 | ... | ... | ... | ... |
+
+## Key Findings / Insights
+- [Finding 1]
+- [Finding 2]
 
 ## Open Questions
 - [Question that needs resolving]
 
 ## Decisions Archive
 - **[Date]** Decided X because Y
-- **[Date]** Changed from A to B after learning C
 ```
 
 ---
@@ -162,14 +190,11 @@ projects/{name}/
 1. Summarize what was done
 2. Record decisions made
 3. Note what's next
-4. Add row to NOTES.md handoff table
+4. Add row to NOTES.md handoff table with **timestamp** (YYYY-MM-DD HH:MM)
 
 Prompt the user: *"Want me to add a handoff summary to NOTES.md before we wrap?"*
 
-This ensures:
-- Context is never lost between sessions
-- Anyone (including future you) can resume instantly
-- Decisions are traceable
+**Timestamp format:** `2024-12-15 14:30` — date + time for precise session tracking.
 
 ---
 
@@ -178,8 +203,9 @@ This ensures:
 **Start a project:**
 ```
 1. "What problem are you solving?"
-2. Create projects/{name}/PROBLEM.md
-3. Build
+2. Detect type: Build / Research / Create
+3. Create projects/{name}/PROBLEM.md
+4. Add files based on type
 ```
 
 **Resume a project:**
