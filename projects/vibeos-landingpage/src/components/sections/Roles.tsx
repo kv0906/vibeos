@@ -53,7 +53,7 @@ export function Roles() {
             <motion.div key={role.title} variants={staggerItem}>
               <Card 
                 className="h-full text-center bg-vibe-elevated group"
-                glowColor={role.color}
+                borderColor={role.color}
               >
                 <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
                   {role.icon}
