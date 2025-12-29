@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- vibeOS Icon - Light Background Variant (no background) -->
+  <defs>
+    <linearGradient id="iconGradientLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Flowing layers - cognitive extension symbol -->
+  <g transform="translate(12, 18)">
+    <!-- Bottom layer -->
+    <path d="M0 24 Q10 18, 20 24 Q30 30, 40 24" stroke="#9CA3AF" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.5"/>
+    <!-- Middle layer -->
+    <path d="M0 16 Q10 10, 20 16 Q30 22, 40 16" stroke="#6B7280" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.7"/>
+    <!-- Top layer - Primary -->
+    <path d="M0 8 Q10 2, 20 8 Q30 14, 40 8" stroke="url(#iconGradientLight)" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <!-- Connection node -->
+    <circle cx="20" cy="12" r="5" fill="url(#iconGradientLight)"/>
+  </g>
+</svg>

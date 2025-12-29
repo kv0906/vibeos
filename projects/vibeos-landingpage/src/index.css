@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-vibe-black text-text-primary font-sans antialiased;
+  }
+  
+  ::selection {
+    @apply bg-accent-violet/30;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-br from-accent-indigo to-accent-violet bg-clip-text text-transparent;
+  }
+  
+  .glass-effect {
+    @apply bg-vibe-black/80 backdrop-blur-xl;
+  }
+  
+  .section-padding {
+    @apply py-24 lg:py-32;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
