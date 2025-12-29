@@ -55,17 +55,9 @@ Bạn có công cụ AI mạnh mẽ. Nhưng không có hệ thống, bạn chỉ
 
 vibeOS là **framework** giúp AI hoạt động như một phần mở rộng của BẠN:
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                        vibeOS                           │
-├─────────────────────────────────────────────────────────┤
-│  Prompt của bạn: "Tôi muốn build habit tracker"         │
-│                         ↓                               │
-│  AI nhận diện intent → Load context → Hướng dẫn bạn     │
-│                         ↓                               │
-│  PROBLEM → PLAN → BUILD → SHIP                          │
-└─────────────────────────────────────────────────────────┘
-```
+<p align="center">
+  <img src="branding/assets/readme-workflow.svg" alt="vibeOS Workflow" width="600">
+</p>
 
 **Thay đổi:**
 - Workspace luôn gọn gàng (projects/, templates, handoffs)
@@ -77,31 +69,9 @@ vibeOS là **framework** giúp AI hoạt động như một phần mở rộng c
 
 ## Trước / Sau
 
-**Không có vibeOS:**
-```
-Bạn: Build cho tôi habit tracker
-
-AI: Đây là React app với 500 dòng code...
-    [Code generic mà bạn không yêu cầu]
-    
-Bạn: Đó không phải ý tôi...
-     [Bắt đầu lại, frustrated]
-```
-
-**Với vibeOS:**
-```
-Bạn: vibeOS — Tôi muốn build habit tracker
-
-AI: Hãy bắt đầu với vấn đề.
-    - Bạn đang giải quyết pain gì về habit-tracking?
-    - Cho bạn hay cho người khác?
-    - "Xong" trông như thế nào?
-
-Bạn: Tôi hay quên track. Các app quá phức tạp.
-
-AI: Hiểu rồi. Tạo PROBLEM.md...
-    [Hướng dẫn bạn từng bước đến sản phẩm hoàn thành]
-```
+<p align="center">
+  <img src="branding/assets/readme-before-after.svg" alt="Trước và Sau vibeOS" width="500">
+</p>
 
 ---
 

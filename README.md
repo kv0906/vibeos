@@ -55,17 +55,9 @@ You have powerful AI tools. But without a system, you're just prompting into the
 
 vibeOS is a **framework** that makes AI work as an extension of YOU:
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                        vibeOS                           │
-├─────────────────────────────────────────────────────────┤
-│  Your prompt: "I want to build a habit tracker"         │
-│                         ↓                               │
-│  AI detects intent → Loads your context → Guides you    │
-│                         ↓                               │
-│  PROBLEM → PLAN → BUILD → SHIP                          │
-└─────────────────────────────────────────────────────────┘
-```
+<p align="center">
+  <img src="branding/assets/readme-workflow.svg" alt="vibeOS Workflow" width="600">
+</p>
 
 **What changes:**
 - Workspace stays organized (projects/, templates, handoffs)
@@ -77,31 +69,9 @@ vibeOS is a **framework** that makes AI work as an extension of YOU:
 
 ## Before / After
 
-**Without vibeOS:**
-```
-You: Build me a habit tracker
-
-AI: Here's a React app with 500 lines...
-    [Generic code you didn't ask for]
-    
-You: That's not what I meant...
-     [Starts over, frustrated]
-```
-
-**With vibeOS:**
-```
-You: vibeOS — I want to build a habit tracker
-
-AI: Let's start with the problem.
-    - What habit-tracking pain are you solving?
-    - Is this for you or others?
-    - What does "done" look like?
-
-You: I keep forgetting to track. Apps are too complex.
-
-AI: Got it. Creating PROBLEM.md...
-    [Guides you step by step to shipped product]
-```
+<p align="center">
+  <img src="branding/assets/readme-before-after.svg" alt="Before and After vibeOS" width="500">
+</p>
 
 ---
 
