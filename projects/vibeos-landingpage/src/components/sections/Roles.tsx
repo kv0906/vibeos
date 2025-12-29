@@ -54,17 +54,12 @@ export function Roles() {
             <motion.div key={role.title} variants={staggerItem}>
               <Card 
                 className="h-full text-center bg-vibe-elevated group"
-                borderColor={role.color}
               >
-                <Badge 
-                  className="mb-4"
-                  style={{ borderColor: role.color, color: role.color } as React.CSSProperties}
-                >
+                <Badge className="mb-4">
                   [{role.tag}]
                 </Badge>
                 <h3 
-                  className="text-lg font-semibold mb-2 transition-colors duration-300 font-serif"
-                  style={{ color: role.color }}
+                  className="text-lg font-semibold mb-2 transition-colors duration-300 font-serif text-text-primary"
                 >
                   {role.title}
                 </h3>
