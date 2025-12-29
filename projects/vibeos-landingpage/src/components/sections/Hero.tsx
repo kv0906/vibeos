@@ -15,8 +15,10 @@ const terminalLines = [
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
-      <GradientDots duration={20} className="-z-10" backgroundColor="hsl(var(--background))" />
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-32">
+      <GradientDots duration={20} backgroundColor="#0A0A0B" />
+      {/* Vignette overlay for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-vibe-black/70 via-transparent to-vibe-black/70 pointer-events-none" />
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-32">
         <motion.div
           className="max-w-4xl"
           variants={staggerContainer}
@@ -37,7 +39,7 @@ export function Hero() {
 
           {/* Subtitle */}
           <motion.p 
-            className="mt-6 text-lg lg:text-xl text-text-secondary max-w-2xl"
+            className="mt-6 text-lg lg:text-xl text-text-primary max-w-2xl"
             variants={staggerItem}
           >
             vibeOS is a cognitive operating system that makes AI work as an 
