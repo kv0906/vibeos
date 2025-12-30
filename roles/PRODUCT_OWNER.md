@@ -358,6 +358,8 @@ Ship → Measure → Learn → Adjust → Ship
 - Human for judgment, taste, user empathy
 ```
 
+> 📚 See [resources/PM-AI-RESOURCES.md](../resources/PM-AI-RESOURCES.md) for curated PM + AI learning materials.
+
 -----
 
 ## Templates

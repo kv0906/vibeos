@@ -15,6 +15,7 @@
 | [Trae](https://www.trae.ai/) | Native AI IDE | **"Solo" mode** for autonomous coding, collaborative AI |
 | [Qoder](https://qoder.com/) | Agentic Platform | Spec-driven development, repo-scale context |
 | [Codex](https://openai.com/) | OpenAI Coding Agent | Cloud-based autonomous engineering (ChatGPT Pro) |
+| [Cursor for PMs](https://github.com/jinjin1/Cursor-for-Product-Managers) | PM Framework Kit | PRDs, discovery, OKRs — AI-native PM workflows |
 | [Cursor](https://cursor.com/) | AI Code Editor | The standard for local AI coding |
 | [Bolt](https://bolt.new/) | Browser AI IDE | Prompt-to-app, zero setup experiments |
 | [Lovable](https://lovable.dev/) | GPT-to-Fullstack | Rapid MVP creation, software design |
