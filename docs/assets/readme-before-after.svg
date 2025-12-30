@@ -1,74 +1,68 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 280" fill="none">
-  <!-- Before/After Comparison for README -->
-  <defs>
-    <linearGradient id="baGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#6366F1"/>
-      <stop offset="100%" stop-color="#8B5CF6"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" fill="none">
+  <!-- Before/After Comparison - vibeOS Brand Guidelines -->
   
   <!-- Background -->
-  <rect width="500" height="280" fill="#0F0F10" rx="12"/>
-  <rect width="500" height="280" fill="none" stroke="#27272A" stroke-width="1" rx="12"/>
+  <rect width="520" height="300" fill="#0b0d0b" rx="8"/>
+  <rect width="520" height="300" fill="none" stroke="rgba(135,139,134,0.12)" stroke-width="1" rx="8"/>
   
   <!-- BEFORE Section -->
   <g transform="translate(20, 20)">
     <!-- Header -->
-    <rect x="0" y="0" width="220" height="28" rx="6" fill="#EF4444" opacity="0.15"/>
-    <text x="110" y="19" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#EF4444" text-anchor="middle">WITHOUT vibeOS</text>
+    <rect x="0" y="0" width="220" height="28" rx="4" fill="rgba(189,43,43,0.15)"/>
+    <text x="110" y="18" font-family="ui-monospace, monospace" font-size="11" font-weight="700" fill="#bd2b2b" text-anchor="middle">WITHOUT vibeOS</text>
     
     <!-- Content -->
-    <rect x="0" y="38" width="220" height="90" rx="8" fill="#18181B"/>
-    <text x="12" y="60" font-family="JetBrains Mono, monospace" font-size="10" fill="#71717A">You: Build me a habit tracker</text>
-    <text x="12" y="80" font-family="JetBrains Mono, monospace" font-size="10" fill="#52525B">AI: Here's 500 lines of code...</text>
-    <text x="12" y="100" font-family="JetBrains Mono, monospace" font-size="10" fill="#52525B">    [Generic, not what you want]</text>
-    <text x="12" y="120" font-family="JetBrains Mono, monospace" font-size="10" fill="#EF4444">You: That's not what I meant...</text>
+    <rect x="0" y="38" width="220" height="100" rx="4" fill="rgba(246,255,245,0.03)" stroke="rgba(135,139,134,0.12)" stroke-width="1"/>
+    <text x="12" y="58" font-family="ui-monospace, monospace" font-size="10" fill="#9ca49c">You: Build me a habit tracker</text>
+    <text x="12" y="78" font-family="ui-monospace, monospace" font-size="10" fill="rgba(135,139,134,0.6)">AI: Here's 500 lines of code...</text>
+    <text x="12" y="98" font-family="ui-monospace, monospace" font-size="10" fill="rgba(135,139,134,0.6)">    [Generic, not what you want]</text>
+    <text x="12" y="118" font-family="ui-monospace, monospace" font-size="10" fill="#bd2b2b">You: That's not what I meant...</text>
   </g>
   
   <!-- Arrow -->
   <g transform="translate(245, 95)">
-    <path d="M0 10 L30 10" stroke="#4B5563" stroke-width="2"/>
-    <polygon points="30,5 40,10 30,15" fill="#4B5563"/>
+    <path d="M0 10 L30 10" stroke="rgba(135,139,134,0.25)" stroke-width="2"/>
+    <polygon points="30,5 40,10 30,15" fill="rgba(135,139,134,0.25)"/>
   </g>
   
   <!-- AFTER Section -->
-  <g transform="translate(260, 20)">
+  <g transform="translate(280, 20)">
     <!-- Header -->
-    <rect x="0" y="0" width="220" height="28" rx="6" fill="#10B981" opacity="0.15"/>
-    <text x="110" y="19" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#10B981" text-anchor="middle">WITH vibeOS</text>
+    <rect x="0" y="0" width="220" height="28" rx="4" fill="rgba(43,161,43,0.15)"/>
+    <text x="110" y="18" font-family="ui-monospace, monospace" font-size="11" font-weight="700" fill="#2ba12b" text-anchor="middle">WITH vibeOS</text>
     
     <!-- Content -->
-    <rect x="0" y="38" width="220" height="90" rx="8" fill="#18181B"/>
-    <text x="12" y="60" font-family="JetBrains Mono, monospace" font-size="10" fill="#71717A">You: vibeOS — habit tracker</text>
-    <text x="12" y="80" font-family="JetBrains Mono, monospace" font-size="10" fill="#10B981">AI: What problem are you solving?</text>
-    <text x="12" y="100" font-family="JetBrains Mono, monospace" font-size="10" fill="#10B981">    Creating PROBLEM.md...</text>
-    <text x="12" y="120" font-family="JetBrains Mono, monospace" font-size="10" fill="#A78BFA">    [Guides you to shipped product]</text>
+    <rect x="0" y="38" width="220" height="100" rx="4" fill="rgba(246,255,245,0.03)" stroke="rgba(135,139,134,0.12)" stroke-width="1"/>
+    <text x="12" y="58" font-family="ui-monospace, monospace" font-size="10" fill="#9ca49c">You: vibeOS — habit tracker</text>
+    <text x="12" y="78" font-family="ui-monospace, monospace" font-size="10" fill="#2ba12b">AI: What problem are you solving?</text>
+    <text x="12" y="98" font-family="ui-monospace, monospace" font-size="10" fill="#2ba12b">    Creating PROBLEM.md...</text>
+    <text x="12" y="118" font-family="ui-monospace, monospace" font-size="10" fill="#f6833b">    [Guides you to shipped product]</text>
   </g>
   
   <!-- Bottom summary -->
-  <g transform="translate(20, 170)">
-    <rect x="0" y="0" width="460" height="90" rx="8" fill="#18181B" stroke="#27272A" stroke-width="1"/>
+  <g transform="translate(20, 180)">
+    <rect x="0" y="0" width="480" height="100" rx="4" fill="rgba(246,255,245,0.03)" stroke="rgba(135,139,134,0.12)" stroke-width="1"/>
     
-    <text x="230" y="25" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#F9FAFB" text-anchor="middle">The Difference</text>
+    <text x="240" y="25" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="rgb(223,223,193)" text-anchor="middle">The Difference</text>
     
     <g transform="translate(40, 45)">
-      <circle cx="0" cy="6" r="4" fill="#EF4444"/>
-      <text x="15" y="10" font-family="Inter, sans-serif" font-size="11" fill="#A1A1AA">Prompting into the void</text>
+      <circle cx="0" cy="6" r="4" fill="#bd2b2b"/>
+      <text x="15" y="10" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9ca49c">Prompting into the void</text>
     </g>
     
-    <g transform="translate(250, 45)">
-      <circle cx="0" cy="6" r="4" fill="#10B981"/>
-      <text x="15" y="10" font-family="Inter, sans-serif" font-size="11" fill="#A1A1AA">AI as cognitive extension</text>
+    <g transform="translate(260, 45)">
+      <circle cx="0" cy="6" r="4" fill="#2ba12b"/>
+      <text x="15" y="10" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9ca49c">AI as cognitive extension</text>
     </g>
     
     <g transform="translate(40, 70)">
-      <circle cx="0" cy="6" r="4" fill="#EF4444"/>
-      <text x="15" y="10" font-family="Inter, sans-serif" font-size="11" fill="#A1A1AA">Context lost every session</text>
+      <circle cx="0" cy="6" r="4" fill="#bd2b2b"/>
+      <text x="15" y="10" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9ca49c">Context lost every session</text>
     </g>
     
-    <g transform="translate(250, 70)">
-      <circle cx="0" cy="6" r="4" fill="#10B981"/>
-      <text x="15" y="10" font-family="Inter, sans-serif" font-size="11" fill="#A1A1AA">Context compounds over time</text>
+    <g transform="translate(260, 70)">
+      <circle cx="0" cy="6" r="4" fill="#2ba12b"/>
+      <text x="15" y="10" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9ca49c">Context compounds over time</text>
     </g>
   </g>
 </svg>

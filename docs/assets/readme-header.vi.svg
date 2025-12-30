@@ -1,30 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" fill="none">
-  <!-- README Header Banner - Vietnamese -->
+  <!-- README Header Banner - Vietnamese - vibeOS Brand Guidelines -->
   
   <!-- Background -->
-  <rect width="800" height="200" fill="#0A0A0B"/>
+  <rect width="800" height="200" fill="#0b0d0b"/>
   
-  <!-- Subtle glow -->
-  <ellipse cx="600" cy="100" rx="300" ry="150" fill="#8B5CF6" opacity="0.05"/>
+  <!-- Subtle gradient overlay -->
+  <rect width="800" height="200" fill="url(#subtleGrad)" opacity="0.3"/>
   
-  <!-- Logomark -->
+  <defs>
+    <linearGradient id="subtleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0d0b"/>
+      <stop offset="100%" stop-color="#091c1e"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f34e3f"/>
+      <stop offset="100%" stop-color="#f6833b"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Logomark - Three waves + dot -->
   <g transform="translate(50, 65)">
-    <path d="M0 48 Q20 32, 40 48 Q60 64, 80 48" stroke="#4B5563" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.4"/>
-    <path d="M0 32 Q20 16, 40 32 Q60 48, 80 32" stroke="#6B7280" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.6"/>
-    <path d="M0 16 Q20 0, 40 16 Q60 32, 80 16" stroke="#A78BFA" stroke-width="5" stroke-linecap="round" fill="none"/>
-    <circle cx="40" cy="24" r="7" fill="#A78BFA"/>
+    <path d="M0 48 Q20 32, 40 48 Q60 64, 80 48" stroke="#333432" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.4"/>
+    <path d="M0 32 Q20 16, 40 32 Q60 48, 80 32" stroke="#9ca49c" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.5"/>
+    <path d="M0 16 Q20 0, 40 16 Q60 32, 80 16" stroke="url(#accentGrad)" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <circle cx="40" cy="24" r="7" fill="url(#accentGrad)"/>
   </g>
   
-  <!-- Title -->
-  <text x="155" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="700" fill="#F9FAFB">
-    vibe<tspan fill="#A78BFA">OS</tspan>
+  <!-- Wordmark: vibe[OS] -->
+  <text x="155" y="120" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="52" font-weight="500" fill="#f6fff5">
+    vibe<tspan fill="#f34e3f">OS</tspan>
   </text>
   
   <!-- Tagline Vietnamese -->
-  <text x="380" y="115" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="400" fill="#A1A1AA">
+  <text x="380" y="110" font-family="system-ui, -apple-system, sans-serif" font-size="17" font-weight="400" fill="#9ca49c">
     Biến công cụ AI coding thành workspace,
   </text>
-  <text x="380" y="140" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="400" fill="#A1A1AA">
+  <text x="380" y="135" font-family="system-ui, -apple-system, sans-serif" font-size="17" font-weight="400" fill="#9ca49c">
     knowledge hub, và build engine của bạn.
   </text>
 </svg>
