@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" fill="none">
+  <!-- Before/After Comparison for README - Vietnamese, GitHub Compatible -->
+  
+  <!-- Background -->
+  <rect width="520" height="300" fill="#0F0F10" rx="12"/>
+  <rect width="520" height="300" fill="none" stroke="#27272A" stroke-width="1" rx="12"/>
+  
+  <!-- BEFORE Section -->
+  <g transform="translate(20, 20)">
+    <!-- Header -->
+    <rect x="0" y="0" width="220" height="28" rx="6" fill="#EF4444" opacity="0.15"/>
+    <text x="110" y="19" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#EF4444" text-anchor="middle">KHÔNG CÓ vibeOS</text>
+    
+    <!-- Content -->
+    <rect x="0" y="38" width="220" height="100" rx="8" fill="#18181B"/>
+    <text x="12" y="58" font-family="ui-monospace, monospace" font-size="10" fill="#71717A">Bạn: Build habit tracker</text>
+    <text x="12" y="78" font-family="ui-monospace, monospace" font-size="10" fill="#52525B">AI: Đây là 500 dòng code...</text>
+    <text x="12" y="98" font-family="ui-monospace, monospace" font-size="10" fill="#52525B">    [Generic, không đúng ý]</text>
+    <text x="12" y="118" font-family="ui-monospace, monospace" font-size="10" fill="#EF4444">Bạn: Không phải thế này...</text>
+  </g>
+  
+  <!-- Arrow -->
+  <g transform="translate(245, 95)">
+    <path d="M0 10 L30 10" stroke="#4B5563" stroke-width="2"/>
+    <polygon points="30,5 40,10 30,15" fill="#4B5563"/>
+  </g>
+  
+  <!-- AFTER Section -->
+  <g transform="translate(280, 20)">
+    <!-- Header -->
+    <rect x="0" y="0" width="220" height="28" rx="6" fill="#10B981" opacity="0.15"/>
+    <text x="110" y="19" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#10B981" text-anchor="middle">VỚI vibeOS</text>
+    
+    <!-- Content -->
+    <rect x="0" y="38" width="220" height="100" rx="8" fill="#18181B"/>
+    <text x="12" y="58" font-family="ui-monospace, monospace" font-size="10" fill="#71717A">Bạn: vibeOS — habit tracker</text>
+    <text x="12" y="78" font-family="ui-monospace, monospace" font-size="10" fill="#10B981">AI: Bạn đang giải quyết gì?</text>
+    <text x="12" y="98" font-family="ui-monospace, monospace" font-size="10" fill="#10B981">    Tạo PROBLEM.md...</text>
+    <text x="12" y="118" font-family="ui-monospace, monospace" font-size="10" fill="#A78BFA">    [Dẫn bạn đến sản phẩm]</text>
+  </g>
+  
+  <!-- Bottom summary -->
+  <g transform="translate(20, 180)">
+    <rect x="0" y="0" width="480" height="100" rx="8" fill="#18181B" stroke="#27272A" stroke-width="1"/>
+    
+    <text x="240" y="25" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#F9FAFB" text-anchor="middle">Sự Khác Biệt</text>
+    
+    <g transform="translate(40, 45)">
+      <circle cx="0" cy="6" r="4" fill="#EF4444"/>
+      <text x="15" y="10" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#A1A1AA">Prompt vào khoảng không</text>
+    </g>
+    
+    <g transform="translate(260, 45)">
+      <circle cx="0" cy="6" r="4" fill="#10B981"/>
+      <text x="15" y="10" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#A1A1AA">AI là phần mở rộng của bạn</text>
+    </g>
+    
+    <g transform="translate(40, 70)">
+      <circle cx="0" cy="6" r="4" fill="#EF4444"/>
+      <text x="15" y="10" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#A1A1AA">Context mất mỗi session</text>
+    </g>
+    
+    <g transform="translate(260, 70)">
+      <circle cx="0" cy="6" r="4" fill="#10B981"/>
+      <text x="15" y="10" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#A1A1AA">Context tích lũy theo thời gian</text>
+    </g>
+  </g>
+</svg>

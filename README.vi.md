@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <img src="docs/assets/readme-header.svg" alt="vibeOS" width="100%">
+  <img src="docs/assets/readme-header.vi.svg" alt="vibeOS" width="100%">
 </p>
 
 > Biến công cụ AI coding thành workspace, knowledge hub, và build engine của bạn.
@@ -56,7 +56,7 @@ Bạn có công cụ AI mạnh mẽ. Nhưng không có hệ thống, bạn chỉ
 vibeOS là **framework** giúp AI hoạt động như một phần mở rộng của BẠN:
 
 <p align="center">
-  <img src="docs/assets/readme-workflow.svg" alt="vibeOS Workflow" width="600">
+  <img src="docs/assets/readme-workflow.vi.svg" alt="Quy Trình vibeOS" width="600">
 </p>
 
 **Thay đổi:**
@@ -70,7 +70,7 @@ vibeOS là **framework** giúp AI hoạt động như một phần mở rộng c
 ## Trước / Sau
 
 <p align="center">
-  <img src="docs/assets/readme-before-after.svg" alt="Trước và Sau vibeOS" width="500">
+  <img src="docs/assets/readme-before-after.vi.svg" alt="Trước và Sau vibeOS" width="520">
 </p>
 
 ---
