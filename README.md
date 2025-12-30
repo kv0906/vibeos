@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <img src="branding/assets/readme-header.svg" alt="vibeOS" width="100%">
+  <img src="docs/assets/readme-header.svg" alt="vibeOS" width="100%">
 </p>
 
 > Turn your AI coding tool into a workspace, knowledge hub, and build engine.
@@ -56,7 +56,7 @@ You have powerful AI tools. But without a system, you're just prompting into the
 vibeOS is a **framework** that makes AI work as an extension of YOU:
 
 <p align="center">
-  <img src="branding/assets/readme-workflow.svg" alt="vibeOS Workflow" width="600">
+  <img src="docs/assets/readme-workflow.svg" alt="vibeOS Workflow" width="600">
 </p>
 
 **What changes:**
@@ -70,7 +70,7 @@ vibeOS is a **framework** that makes AI work as an extension of YOU:
 ## Before / After
 
 <p align="center">
-  <img src="branding/assets/readme-before-after.svg" alt="Before and After vibeOS" width="500">
+  <img src="docs/assets/readme-before-after.svg" alt="Before and After vibeOS" width="500">
 </p>
 
 ---
@@ -141,19 +141,16 @@ vibeos/
 │   ├── SYSTEM.md               ← Core beliefs & principles
 │   ├── MANIFESTO.md            ← How AI operates
 │   ├── WORKFLOW.md             ← Project lifecycle
-│   ├── IDENTITY.template.md    ← Your personal flavor (copy this)
-│   └── TOOLBOX.md              ← Curated tools
+│   └── IDENTITY.template.md    ← Your personal flavor (copy this)
 │
 ├── roles/                      ← Skill modes
 │   ├── ENGINEER.md             ← Build software
 │   ├── PRODUCT_OWNER.md        ← Define products
 │   └── templates/              ← More roles
 │
-├── examples/                   ← Real project journeys
-│   ├── build-habit-tracker/    ← Full Build example
-│   └── research-user-behavior/ ← Research example
-│
-└── projects/                   ← Your work goes here
+└── examples/                   ← Real project journeys
+    ├── build-habit-tracker/    ← Full Build example
+    └── research-user-behavior/ ← Research example
 ```
 
 ---

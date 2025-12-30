@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <img src="branding/assets/readme-header.svg" alt="vibeOS" width="100%">
+  <img src="docs/assets/readme-header.svg" alt="vibeOS" width="100%">
 </p>
 
 > Biến công cụ AI coding thành workspace, knowledge hub, và build engine của bạn.
@@ -56,7 +56,7 @@ Bạn có công cụ AI mạnh mẽ. Nhưng không có hệ thống, bạn chỉ
 vibeOS là **framework** giúp AI hoạt động như một phần mở rộng của BẠN:
 
 <p align="center">
-  <img src="branding/assets/readme-workflow.svg" alt="vibeOS Workflow" width="600">
+  <img src="docs/assets/readme-workflow.svg" alt="vibeOS Workflow" width="600">
 </p>
 
 **Thay đổi:**
@@ -70,7 +70,7 @@ vibeOS là **framework** giúp AI hoạt động như một phần mở rộng c
 ## Trước / Sau
 
 <p align="center">
-  <img src="branding/assets/readme-before-after.svg" alt="Trước và Sau vibeOS" width="500">
+  <img src="docs/assets/readme-before-after.svg" alt="Trước và Sau vibeOS" width="500">
 </p>
 
 ---
@@ -141,19 +141,16 @@ vibeos/
 │   ├── SYSTEM.md               ← Niềm tin & nguyên tắc cốt lõi
 │   ├── MANIFESTO.md            ← Cách AI hoạt động
 │   ├── WORKFLOW.md             ← Vòng đời project
-│   ├── IDENTITY.template.md    ← Phong cách cá nhân (copy file này)
-│   └── TOOLBOX.md              ← Công cụ được chọn lọc
+│   └── IDENTITY.template.md    ← Phong cách cá nhân (copy file này)
 │
 ├── roles/                      ← Các chế độ kỹ năng
 │   ├── ENGINEER.md             ← Build software
 │   ├── PRODUCT_OWNER.md        ← Định nghĩa products
 │   └── templates/              ← Thêm roles khác
 │
-├── examples/                   ← Hành trình project thực tế
-│   ├── build-habit-tracker/    ← Ví dụ Build đầy đủ
-│   └── research-user-behavior/ ← Ví dụ Research
-│
-└── projects/                   ← Công việc của bạn ở đây
+└── examples/                   ← Hành trình project thực tế
+    ├── build-habit-tracker/    ← Ví dụ Build đầy đủ
+    └── research-user-behavior/ ← Ví dụ Research
 ```
 
 ---
