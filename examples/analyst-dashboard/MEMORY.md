@@ -1,6 +1,31 @@
-# Notes — Analyst Dashboard
+# Memory — Analyst Dashboard
 
-## Handoff Log
+## Current Snapshot (read this first)
+
+**Last updated:** 2024-11-27 15:00  
+**Status:** Shipped  
+**Current goal:** Shipped ✓ — weekly dashboard live
+
+**Next actions:**
+- [ ] Add export to PDF
+- [ ] Consider Notion integration for team updates
+- [ ] Weekly auto-email feature
+
+**Constraints / Guardrails:**
+- 3 key metrics only (not 10)
+- No real-time updates in v1
+- No alerts in v1
+
+**Key decisions (recent):**
+- 2024-11-25 — Google Sheets as backend (no database setup)
+- 2024-11-26 — Next.js + Recharts stack
+
+**Open questions:**
+- Weekly auto-email implementation?
+
+---
+
+## Handoff Log (append-only)
 
 | Date | Session Summary | Decisions Made | Next Actions |
 |------|-----------------|----------------|--------------|
@@ -11,14 +36,17 @@
 | 2024-11-27 10:00 | Built dashboard with 3 charts | Added date range filter | Polish UI |
 | 2024-11-27 15:00 | Deployed, shared with team | Weekly auto-email later | **SHIPPED** ✓ |
 
-## Key Insights
+---
+
+## Decisions Archive
+- Google Sheets as backend = no database setup
+- Recharts over D3 for simplicity
+
+## Learnings / Insights
 - Google Sheets as backend = no database setup
 - 3 metrics is enough — more would be noise
 - Recharts was simpler than D3 for basic charts
-
-## What I'd Do Differently
-- Add export to PDF from day 1
-- Consider Notion integration for team updates
+- PRD scope kept focus on 3 metrics instead of 10
 
 ---
 

@@ -1,6 +1,30 @@
-# Notes — User Onboarding Research
+# Memory — User Onboarding Research
 
-## Handoff Log
+## Current Snapshot (read this first)
+
+**Last updated:** 2024-12-12 10:00  
+**Status:** Active (pending implementation)  
+**Current goal:** Present recommendations to team
+
+**Next actions:**
+- [ ] Present findings to product team
+- [ ] Decide A/B test priority
+- [ ] Assign ownership (product or engineering)
+
+**Constraints / Guardrails:**
+- Focus on drop-off points only (not full UX audit)
+
+**Key decisions (recent):**
+- 2024-12-10 — Focus on 3 major drop-off points
+- 2024-12-11 — "Too many options" identified as root cause
+
+**Open questions:**
+- Should we A/B test recommendation #1 first?
+- Who owns implementation — product or engineering?
+
+---
+
+## Handoff Log (append-only)
 
 | Date | Session Summary | Decisions Made | Next Actions |
 |------|-----------------|----------------|--------------|
@@ -9,6 +33,8 @@
 | 2024-12-11 09:00 | Reviewed session recordings (Hotjar) | Users confused at step 3 (integration) | Interview 5 users |
 | 2024-12-11 15:00 | Conducted 3 user interviews | "Too many options" was common theme | Synthesize findings |
 | 2024-12-12 10:00 | Synthesized all data, wrote recommendations | 3 clear actions | Present to team |
+
+---
 
 ## Key Findings
 
@@ -41,10 +67,6 @@ Let users explore with demo data before connecting real accounts.
 Show "Step 2 of 5" throughout onboarding.
 - Expected impact: 5-10% improvement, low effort to implement
 
-## Open Questions
-- Should we A/B test recommendation #1 first?
-- Who owns implementation — product or engineering?
-
 ---
 
 ## The Journey
@@ -54,6 +76,6 @@ This research project took **3 sessions** (~5 hours total).
 **What worked:**
 - Starting with PROBLEM.md forced clarity on what we're actually solving
 - AI helped synthesize interview notes quickly
-- NOTES.md captured everything — easy to share with team
+- MEMORY.md captured everything — easy to share with team
 
 **Key learning:** Research projects don't need TECH_SPEC or PRD. Just PROBLEM → NOTES. The framework adapted to the work, not the other way around.

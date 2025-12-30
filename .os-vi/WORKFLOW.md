@@ -17,10 +17,10 @@ PROMPT → LÀM RÕ → HIỂU → TẠO → BUILD → LẶP LẠI
 Không phải project nào cũng giống nhau. Nhận diện loại trước:
 
 | Loại | Là gì | Files Cần |
-|------|-------|-----------|
-| **Build** | Software, web app, vibe coding | PROBLEM → PRD → TECH_SPEC → NOTES |
-| **Research** | Phân tích, docs, PDF, hành vi người dùng | PROBLEM → NOTES |
-| **Create** | Content, viết lách, design assets | PROBLEM → NOTES |
+|------|-------|-----------| 
+| **Build** | Software, web app, vibe coding | PROBLEM → PRD → TECH_SPEC → MEMORY |
+| **Research** | Phân tích, docs, PDF, hành vi người dùng | PROBLEM → MEMORY |
+| **Create** | Content, viết lách, design assets | PROBLEM → MEMORY |
 
 **Quy tắc:** Chỉ project **Build** cần TECH_SPEC.md. Đừng over-engineer.
 
@@ -55,7 +55,7 @@ projects/{name}/
 ├── PROBLEM.md     ← Neo tầm nhìn (luôn có)
 ├── PRD.md         ← What/why/how, user stories
 ├── TECH_SPEC.md   ← Stack, architecture
-└── NOTES.md       ← Quyết định, tiến độ
+└── MEMORY.md      ← Trạng thái hiện tại, quyết định, bàn giao
 ```
 
 ### Research Projects (Phân Tích/Docs)
@@ -63,7 +63,7 @@ projects/{name}/
 ```
 projects/{name}/
 ├── PROBLEM.md     ← Chúng ta đang nghiên cứu gì?
-└── NOTES.md       ← Phát hiện, insights, quyết định
+└── MEMORY.md      ← Trạng thái hiện tại, phát hiện, quyết định
 ```
 
 ### Create Projects (Content/Design)
@@ -71,7 +71,7 @@ projects/{name}/
 ```
 projects/{name}/
 ├── PROBLEM.md     ← Chúng ta đang tạo gì?
-└── NOTES.md       ← Bản nháp, iterations, quyết định
+└── MEMORY.md      ← Trạng thái hiện tại, bản nháp, quyết định
 ```
 
 ---
@@ -157,12 +157,33 @@ projects/{name}/
 
 ---
 
-## Template NOTES.md (Tất Cả Projects)
+## Template MEMORY.md (Tất Cả Projects)
 
 ```markdown
-# Notes — {Tên Project}
+# Memory — {Tên Project}
 
-## Nhật Ký Bàn Giao
+## Ảnh Chụp Hiện Tại (đọc đầu tiên)
+
+**Cập nhật lần cuối:** YYYY-MM-DD HH:MM  
+**Trạng thái:** Active / Paused / Shipped  
+**Mục tiêu hiện tại:** [Một dòng — đang làm gì]
+
+**Hành động tiếp theo:**
+- [ ] ...
+- [ ] ...
+
+**Ràng buộc / Guardrails:**
+- [Những gì KHÔNG làm]
+
+**Quyết định quan trọng (gần đây):**
+- YYYY-MM-DD — [Quyết định] vì [lý do]
+
+**Câu hỏi mở:**
+- [Câu hỏi cần giải quyết]
+
+---
+
+## Nhật Ký Bàn Giao (chỉ thêm vào)
 
 | Ngày | Tóm Tắt Phiên | Quyết Định Đã Làm | Hành Động Tiếp |
 |------|---------------|-------------------|----------------|
@@ -170,16 +191,20 @@ projects/{name}/
 | 2024-01-15 14:30 | Hoàn thành phân tích, viết tóm tắt | Sử dụng framework X | Draft khuyến nghị |
 | ... | ... | ... | ... |
 
-## Phát Hiện / Insights Quan Trọng
-- [Phát hiện 1]
-- [Phát hiện 2]
-
-## Câu Hỏi Mở
-- [Câu hỏi cần giải quyết]
+---
 
 ## Lưu Trữ Quyết Định
 - **[Ngày]** Quyết định X vì Y
+
+## Học Hỏi / Insights
+- [Phát hiện 1]
+- [Phát hiện 2]
 ```
+
+**Quy tắc vận hành:**
+- **Cập nhật "Ảnh Chụp Hiện Tại" mỗi phiên** (ghi đè, giữ ngắn gọn)
+- **Thêm đúng một dòng** vào Nhật Ký Bàn Giao cuối phiên
+- Nếu quyết định quan trọng dài hạn, ghi vào Quyết định quan trọng + Lưu Trữ Quyết Định
 
 ---
 
@@ -187,12 +212,13 @@ projects/{name}/
 
 **Cuối mỗi phiên làm việc, luôn:**
 
-1. Tóm tắt những gì đã làm
-2. Ghi lại quyết định đã đưa ra
-3. Ghi chú việc tiếp theo
-4. Thêm dòng vào bảng bàn giao NOTES.md với **timestamp** (YYYY-MM-DD HH:MM)
+1. Cập nhật phần "Ảnh Chụp Hiện Tại" (ghi đè với trạng thái hiện tại)
+2. Tóm tắt những gì đã làm
+3. Ghi lại quyết định đã đưa ra
+4. Ghi chú việc tiếp theo
+5. Thêm dòng vào bảng bàn giao MEMORY.md với **timestamp** (YYYY-MM-DD HH:MM)
 
-Nhắc người dùng: *"Bạn có muốn tôi thêm tóm tắt bàn giao vào NOTES.md trước khi kết thúc không?"*
+Nhắc người dùng: *"Bạn có muốn tôi cập nhật MEMORY.md trước khi kết thúc không?"*
 
 **Định dạng timestamp:** `2024-12-15 14:30` — ngày + giờ để theo dõi phiên chính xác.
 
@@ -211,15 +237,16 @@ Nhắc người dùng: *"Bạn có muốn tôi thêm tóm tắt bàn giao vào N
 **Tiếp tục project:**
 ```
 1. Đọc PROBLEM.md (tầm nhìn)
-2. Đọc bảng bàn giao NOTES.md (nơi chúng ta dừng lại)
-3. Tiếp tục từ "Hành Động Tiếp" cuối cùng
+2. Đọc MEMORY.md "Ảnh Chụp Hiện Tại" (đang ở đâu)
+3. Xem dòng cuối Nhật Ký Bàn Giao (thay đổi gần nhất)
+4. Tiếp tục từ "Hành động tiếp theo"
 ```
 
 **Kết thúc phiên:**
 ```
-1. Tóm tắt tiến độ
-2. Thêm dòng bàn giao vào NOTES.md
-3. Làm rõ hành động tiếp theo
+1. Cập nhật "Ảnh Chụp Hiện Tại" trong MEMORY.md
+2. Thêm dòng bàn giao vào Nhật Ký Bàn Giao
+3. Xác nhận hành động tiếp theo rõ ràng
 ```
 
 ---

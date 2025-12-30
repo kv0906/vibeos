@@ -1,6 +1,31 @@
-# Notes — Designer Portfolio
+# Memory — Designer Portfolio
 
-## Handoff Log
+## Current Snapshot (read this first)
+
+**Last updated:** 2024-11-22 11:00  
+**Status:** Shipped  
+**Current goal:** Shipped ✓ — portfolio.design live
+
+**Next actions:**
+- [ ] Start with mobile layout first (next project)
+- [ ] Consider adding blog for v2
+
+**Constraints / Guardrails:**
+- 3-5 projects only (less is more)
+- Dark mode default
+- No contact form in v1
+
+**Key decisions (recent):**
+- 2024-11-21 — Chose Astro + Tailwind for speed
+- 2024-11-21 — Dark mode default for premium feel
+- 2024-11-22 — Used MDX for easy project updates
+
+**Open questions:**
+- When to add blog?
+
+---
+
+## Handoff Log (append-only)
 
 | Date | Session Summary | Decisions Made | Next Actions |
 |------|-----------------|----------------|--------------|
@@ -11,12 +36,16 @@
 | 2024-11-22 09:00 | Completed project detail pages | Used MDX for easy updates | Deploy |
 | 2024-11-22 11:00 | Deployed to Vercel, custom domain | portfolio.design live | **SHIPPED** ✓ |
 
-## Key Insights
+---
+
+## Decisions Archive
+- Chose Astro for fast builds, no JS overhead
+- 5 projects > 20 projects
+
+## Learnings / Insights
 - Less is more — 5 projects > 20 projects
 - Dark mode felt more premium for design work
 - Astro was perfect — fast builds, no JS overhead
-
-## What I'd Do Differently
 - Start with mobile layout first
 - Write case study content before building
 

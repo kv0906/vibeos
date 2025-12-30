@@ -18,9 +18,9 @@ Not all projects are the same. Detect the type first:
 
 | Type | What it is | Files Needed |
 |------|------------|--------------|
-| **Build** | Software, web app, vibe coding | PROBLEM → PRD → TECH_SPEC → NOTES |
-| **Research** | Analysis, docs, PDFs, user behavior | PROBLEM → NOTES |
-| **Create** | Content, writing, design assets | PROBLEM → NOTES |
+| **Build** | Software, web app, vibe coding | PROBLEM → PRD → TECH_SPEC → MEMORY |
+| **Research** | Analysis, docs, PDFs, user behavior | PROBLEM → MEMORY |
+| **Create** | Content, writing, design assets | PROBLEM → MEMORY |
 
 **Rule:** Only **Build** projects need TECH_SPEC.md. Don't over-engineer.
 
@@ -55,7 +55,7 @@ projects/{name}/
 ├── PROBLEM.md     ← Vision anchor (always)
 ├── PRD.md         ← What/why/how, user stories
 ├── TECH_SPEC.md   ← Stack, architecture
-└── NOTES.md       ← Decisions, progress
+└── MEMORY.md      ← Current state, decisions, handoffs
 ```
 
 ### Research Projects (Analysis/Docs)
@@ -63,7 +63,7 @@ projects/{name}/
 ```
 projects/{name}/
 ├── PROBLEM.md     ← What are we researching?
-└── NOTES.md       ← Findings, insights, decisions
+└── MEMORY.md      ← Current state, findings, decisions
 ```
 
 ### Create Projects (Content/Design)
@@ -71,7 +71,7 @@ projects/{name}/
 ```
 projects/{name}/
 ├── PROBLEM.md     ← What are we creating?
-└── NOTES.md       ← Drafts, iterations, decisions
+└── MEMORY.md      ← Current state, drafts, decisions
 ```
 
 ---
@@ -157,12 +157,33 @@ projects/{name}/
 
 ---
 
-## NOTES.md Template (All Projects)
+## MEMORY.md Template (All Projects)
 
 ```markdown
-# Notes — {Project Name}
+# Memory — {Project Name}
 
-## Handoff Log
+## Current Snapshot (read this first)
+
+**Last updated:** YYYY-MM-DD HH:MM  
+**Status:** Active / Paused / Shipped  
+**Current goal:** [One line — what we're working on now]
+
+**Next actions:**
+- [ ] ...
+- [ ] ...
+
+**Constraints / Guardrails:**
+- [What we're NOT doing]
+
+**Key decisions (recent):**
+- YYYY-MM-DD — [Decision] because [rationale]
+
+**Open questions:**
+- [Question that needs resolving]
+
+---
+
+## Handoff Log (append-only)
 
 | Date | Session Summary | Decisions Made | Next Actions |
 |------|-----------------|----------------|--------------|
@@ -170,16 +191,20 @@ projects/{name}/
 | 2024-01-15 14:30 | Completed analysis, wrote summary | Use framework X | Draft recommendations |
 | ... | ... | ... | ... |
 
-## Key Findings / Insights
-- [Finding 1]
-- [Finding 2]
-
-## Open Questions
-- [Question that needs resolving]
+---
 
 ## Decisions Archive
 - **[Date]** Decided X because Y
+
+## Learnings / Insights
+- [Finding 1]
+- [Finding 2]
 ```
+
+**Operational rules:**
+- **Update "Current Snapshot" every session** (overwrite, keep concise)
+- **Append exactly one row** to Handoff Log at end of session
+- If a decision matters long-term, record it in Key decisions + Decisions Archive
 
 ---
 
@@ -187,12 +212,13 @@ projects/{name}/
 
 **At the end of every working session, always:**
 
-1. Summarize what was done
-2. Record decisions made
-3. Note what's next
-4. Add row to NOTES.md handoff table with **timestamp** (YYYY-MM-DD HH:MM)
+1. Update "Current Snapshot" section (overwrite with current state)
+2. Summarize what was done
+3. Record decisions made
+4. Note what's next
+5. Add row to MEMORY.md handoff table with **timestamp** (YYYY-MM-DD HH:MM)
 
-Prompt the user: *"Want me to add a handoff summary to NOTES.md before we wrap?"*
+Prompt the user: *"Want me to update MEMORY.md before we wrap?"*
 
 **Timestamp format:** `2024-12-15 14:30` — date + time for precise session tracking.
 
@@ -211,15 +237,16 @@ Prompt the user: *"Want me to add a handoff summary to NOTES.md before we wrap?"
 **Resume a project:**
 ```
 1. Read PROBLEM.md (the vision)
-2. Read NOTES.md handoff table (where we left off)
-3. Continue from last "Next Actions"
+2. Read MEMORY.md "Current Snapshot" (where we are now)
+3. Scan latest Handoff Log row (what changed last)
+4. Continue from "Next actions"
 ```
 
 **End a session:**
 ```
-1. Summarize progress
-2. Add handoff row to NOTES.md
-3. Clear next actions
+1. Update "Current Snapshot" in MEMORY.md
+2. Add handoff row to Handoff Log
+3. Confirm next actions are clear
 ```
 
 ---
